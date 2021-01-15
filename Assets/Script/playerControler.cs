@@ -19,18 +19,22 @@ public class playerControler : MonoBehaviour
         if (Input.GetAxis("Horizontal") < 0)
         {
             rb2d.velocity = Vector2.left * speed;
+            transform.up = Vector2.right;
         }
         else if (Input.GetAxis("Horizontal") > 0)
         {
             rb2d.velocity = Vector2.right * speed;
+            transform.up = Vector2.left;
         }
         if (Input.GetAxis("Vertical") < 0)
         {
             rb2d.velocity = Vector2.down * speed;
+            transform.up = Vector2.up;
         }
         else if (Input.GetAxis("Vertical") > 0)
         {
             rb2d.velocity = Vector2.up * speed;
+            transform.up = Vector2.down;
         } 
     }
 }
