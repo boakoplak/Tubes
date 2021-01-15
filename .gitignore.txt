@@ -1,0 +1,10 @@
+# Unity files
+Library/
+Temp/
+
+# Windows image dile caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
